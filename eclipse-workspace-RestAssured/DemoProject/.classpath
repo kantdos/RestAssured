@@ -55,5 +55,8 @@
 	<classpathentry kind="lib" path="D:/Rest API Jars/json-schema-validator-4.3.1-dist/json-schema-validator-4.3.1-deps/rhino-1.7.7.1.jar"/>
 	<classpathentry kind="lib" path="D:/Rest API Jars/json-schema-validator-4.3.1-dist/json-schema-validator-4.3.1-deps/uri-template-0.9.jar"/>
 	<classpathentry kind="lib" path="D:/TestNG/testng-7.1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="lib" path="D:/TestNG/jcommander-1.78.jar"/>
+	<classpathentry kind="lib" path="D:/TestNG/guice-4.2.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

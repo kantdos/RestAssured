@@ -41,18 +41,17 @@ public class Basics {
 		System.out.println("Address Updated");
 
 		// Get Place
-		String getPlaceResponce = given().log().all().queryParam("key", "qaclick123").queryParam("place_id", placeID).when()
-				.get("/maps/api/place/get/json").then().assertThat().statusCode(200).extract().response().asString();
-				
+		String getPlaceResponce = given().log().all().queryParam("key", "qaclick123").queryParam("place_id", placeID)
+				.when().get("/maps/api/place/get/json").then().assertThat().statusCode(200).extract().response()
+				.asString();
+
 		JsonPath js1 = ReUsableMethod.rawToJson(getPlaceResponce);
 		String actualAddress = js1.getString("address");
 		System.out.println(actualAddress);
-		
+
 		Assert.assertEquals(actualAddress, newAddress);
-		
+
 		System.out.println("Address Validated");
-		
-		
 
 	}
 
